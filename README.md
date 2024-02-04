@@ -56,4 +56,8 @@ FROM students
 JOIN enrollments ON students.id = enrollments.student_id
 WHERE enrollments.subject_id = :subject_id;
 
+## Schema Diagram
+
+You can visualize the complete database schema using the [dbdiagram.io schema diagram](https://dbdiagram.io/d). Click on the link to explore the relationships between tables.
+
 
