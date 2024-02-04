@@ -34,6 +34,7 @@ enrollment_table = Table(
     Column("subject_id", Integer, ForeignKey("subjects.id")),
 )
 
+Base.metadata.create_all(bind=engine)
 
 # Pydantic models for request payload
 class StudentPayload(BaseModel):
