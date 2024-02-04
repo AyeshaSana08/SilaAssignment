@@ -46,6 +46,10 @@ This document provides an overview of the database schema for the application. T
 - **students to subjects (Many-to-Many):**
   - Through the `enrollments` table, there is a Many-to-Many relationship between students and subjects. A student can be enrolled in multiple subjects, and a subject can have multiple students.
 
+## Schema Diagram
+
+You can visualize the complete database schema using the [dbdiagram.io schema diagram](https://dbdiagram.io/d). Click on the link to explore the relationships between tables.
+
 ## Example SQL Queries
 
 ### Retrieve all students enrolled in a specific subject:
@@ -56,8 +60,6 @@ FROM students
 JOIN enrollments ON students.id = enrollments.student_id
 WHERE enrollments.subject_id = :subject_id;
 
-## Schema Diagram
 
-You can visualize the complete database schema using the [dbdiagram.io schema diagram](https://dbdiagram.io/d). Click on the link to explore the relationships between tables.
 
 
